@@ -3,14 +3,13 @@ function Controller () {
     }
 
     Controller.prototype.initialiseSea = function initialiseSea() {
-    window.setInterval(() => {}, 1000)
-    console.log("Hello")
-    };
-    /*initialiseSea() {
         const background = [
             './images/water0.png',
             './images/water1.jpg',
         ];
-        const backgroundIndex = 0;
-
-    }*/
+        let backgroundIndex = 0;
+        window.setInterval(() => {
+            document.querySelector('#viewport').style.backgroundImage = `url('${backgrounds[backgroundIndex % backgrounds.length]}')`;
+            backgroundIndex += 1;
+        }, 1000);
+};
