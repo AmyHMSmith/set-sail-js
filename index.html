@@ -17,8 +17,19 @@
 <body>
 <script src="src/controller.js"></script>
 <script src="src/port.js"></script>
+<script src="src/itinerary.js"></script>
+
 <script>
-    const controller = new Controller();
+    const port = new Port();
+    const itinerary = new Itinerary([
+        new Port("Dover"),
+        new Port("Liverpool"),
+        new Port("Felixstowe")
+    ]);
+
+    const controller = new Controller(ship);
 </script>
+
 <div id="viewport"></div>
 </body>
+</html>
