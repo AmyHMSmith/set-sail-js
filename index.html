@@ -22,14 +22,16 @@
 <script>
     const port = new Port();
     const itinerary = new Itinerary([
-        new Port("Dover"),
-        new Port("Liverpool"),
-        new Port("Felixstowe")
+        new Port("Penang"),
+        new Port("Melaka"),
+        new Port("Singapore")
     ]);
 
     const controller = new Controller(ship);
 </script>
 
-<div id="viewport"></div>
+<div id="viewport">
+    <div id="ports"></div>
+</div>
 </body>
 </html>
